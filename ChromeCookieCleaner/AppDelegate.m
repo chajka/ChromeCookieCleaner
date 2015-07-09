@@ -67,6 +67,8 @@ enum popupTag {
 	FMResultSet *resultSet = [db executeQuery:SQLString];
 	if (resultSet == nil)
 		return;
+	while ([resultSet next])
+		;
 }// end - (IBAction) deleteCookies:(id)sender
 #pragma mark - messages
 #pragma mark - private
