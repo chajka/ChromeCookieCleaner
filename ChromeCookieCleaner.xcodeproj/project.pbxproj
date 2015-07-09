@@ -12,6 +12,12 @@
 		C60E05A01B4ED1D800D27C26 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C60E059F1B4ED1D800D27C26 /* Images.xcassets */; };
 		C60E05A31B4ED1D800D27C26 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = C60E05A11B4ED1D800D27C26 /* MainMenu.xib */; };
 		C60E05AF1B4ED1D800D27C26 /* ChromeCookieCleanerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C60E05AE1B4ED1D800D27C26 /* ChromeCookieCleanerTests.m */; };
+		C60E05BC1B4ED36C00D27C26 /* sqlite3.c in Sources */ = {isa = PBXBuildFile; fileRef = C60E05BB1B4ED36C00D27C26 /* sqlite3.c */; settings = {COMPILER_FLAGS = "-Xanalyzer -analyzer-disable-all-checks -w -fno-objc-arc -std=c99"; }; };
+		C60E05C91B4ED3B200D27C26 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = C60E05BE1B4ED3B100D27C26 /* FMResultSet.m */; };
+		C60E05CA1B4ED3B200D27C26 /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = C60E05C11B4ED3B100D27C26 /* FMDatabaseQueue.m */; };
+		C60E05CB1B4ED3B200D27C26 /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = C60E05C31B4ED3B200D27C26 /* FMDatabasePool.m */; };
+		C60E05CC1B4ED3B200D27C26 /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = C60E05C51B4ED3B200D27C26 /* FMDatabaseAdditions.m */; };
+		C60E05CD1B4ED3B200D27C26 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = C60E05C71B4ED3B200D27C26 /* FMDatabase.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,10 +37,23 @@
 		C60E059B1B4ED1D800D27C26 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		C60E059D1B4ED1D800D27C26 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C60E059F1B4ED1D800D27C26 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		C60E05A21B4ED1D800D27C26 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		C60E05A81B4ED1D800D27C26 /* ChromeCookieCleanerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChromeCookieCleanerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C60E05AD1B4ED1D800D27C26 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C60E05AE1B4ED1D800D27C26 /* ChromeCookieCleanerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChromeCookieCleanerTests.m; sourceTree = "<group>"; };
+		C60E05BA1B4ED36C00D27C26 /* sqlite3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = sqlite3.h; path = External/SQLite3/sqlite3.h; sourceTree = SOURCE_ROOT; };
+		C60E05BB1B4ED36C00D27C26 /* sqlite3.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = sqlite3.c; path = External/SQLite3/sqlite3.c; sourceTree = SOURCE_ROOT; };
+		C60E05BE1B4ED3B100D27C26 /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMResultSet.m; path = External/FMDB/src/fmdb/FMResultSet.m; sourceTree = SOURCE_ROOT; };
+		C60E05BF1B4ED3B100D27C26 /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMResultSet.h; path = External/FMDB/src/fmdb/FMResultSet.h; sourceTree = SOURCE_ROOT; };
+		C60E05C01B4ED3B100D27C26 /* FMDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMDB.h; path = External/FMDB/src/fmdb/FMDB.h; sourceTree = SOURCE_ROOT; };
+		C60E05C11B4ED3B100D27C26 /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMDatabaseQueue.m; path = External/FMDB/src/fmdb/FMDatabaseQueue.m; sourceTree = SOURCE_ROOT; };
+		C60E05C21B4ED3B200D27C26 /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMDatabaseQueue.h; path = External/FMDB/src/fmdb/FMDatabaseQueue.h; sourceTree = SOURCE_ROOT; };
+		C60E05C31B4ED3B200D27C26 /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMDatabasePool.m; path = External/FMDB/src/fmdb/FMDatabasePool.m; sourceTree = SOURCE_ROOT; };
+		C60E05C41B4ED3B200D27C26 /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMDatabasePool.h; path = External/FMDB/src/fmdb/FMDatabasePool.h; sourceTree = SOURCE_ROOT; };
+		C60E05C51B4ED3B200D27C26 /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMDatabaseAdditions.m; path = External/FMDB/src/fmdb/FMDatabaseAdditions.m; sourceTree = SOURCE_ROOT; };
+		C60E05C61B4ED3B200D27C26 /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMDatabaseAdditions.h; path = External/FMDB/src/fmdb/FMDatabaseAdditions.h; sourceTree = SOURCE_ROOT; };
+		C60E05C71B4ED3B200D27C26 /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMDatabase.m; path = External/FMDB/src/fmdb/FMDatabase.m; sourceTree = SOURCE_ROOT; };
+		C60E05C81B4ED3B200D27C26 /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMDatabase.h; path = External/FMDB/src/fmdb/FMDatabase.h; sourceTree = SOURCE_ROOT; };
+		C68191081B4ED4D3007AC894 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,11 +95,10 @@
 		C60E05971B4ED1D800D27C26 /* ChromeCookieCleaner */ = {
 			isa = PBXGroup;
 			children = (
-				C60E059A1B4ED1D800D27C26 /* AppDelegate.h */,
-				C60E059B1B4ED1D800D27C26 /* AppDelegate.m */,
-				C60E059F1B4ED1D800D27C26 /* Images.xcassets */,
-				C60E05A11B4ED1D800D27C26 /* MainMenu.xib */,
+				C60E05B81B4ED2FF00D27C26 /* Application */,
 				C60E05981B4ED1D800D27C26 /* Supporting Files */,
+				C60E05B91B4ED30900D27C26 /* SQLite3 */,
+				C60E05BD1B4ED39200D27C26 /* FMDB */,
 			);
 			path = ChromeCookieCleaner;
 			sourceTree = "<group>";
@@ -109,6 +127,44 @@
 				C60E05AD1B4ED1D800D27C26 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C60E05B81B4ED2FF00D27C26 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				C60E059A1B4ED1D800D27C26 /* AppDelegate.h */,
+				C60E059B1B4ED1D800D27C26 /* AppDelegate.m */,
+				C60E059F1B4ED1D800D27C26 /* Images.xcassets */,
+				C60E05A11B4ED1D800D27C26 /* MainMenu.xib */,
+			);
+			name = Application;
+			sourceTree = "<group>";
+		};
+		C60E05B91B4ED30900D27C26 /* SQLite3 */ = {
+			isa = PBXGroup;
+			children = (
+				C60E05BA1B4ED36C00D27C26 /* sqlite3.h */,
+				C60E05BB1B4ED36C00D27C26 /* sqlite3.c */,
+			);
+			name = SQLite3;
+			sourceTree = "<group>";
+		};
+		C60E05BD1B4ED39200D27C26 /* FMDB */ = {
+			isa = PBXGroup;
+			children = (
+				C60E05C01B4ED3B100D27C26 /* FMDB.h */,
+				C60E05C81B4ED3B200D27C26 /* FMDatabase.h */,
+				C60E05C71B4ED3B200D27C26 /* FMDatabase.m */,
+				C60E05BF1B4ED3B100D27C26 /* FMResultSet.h */,
+				C60E05BE1B4ED3B100D27C26 /* FMResultSet.m */,
+				C60E05C21B4ED3B200D27C26 /* FMDatabaseQueue.h */,
+				C60E05C11B4ED3B100D27C26 /* FMDatabaseQueue.m */,
+				C60E05C41B4ED3B200D27C26 /* FMDatabasePool.h */,
+				C60E05C31B4ED3B200D27C26 /* FMDatabasePool.m */,
+				C60E05C61B4ED3B200D27C26 /* FMDatabaseAdditions.h */,
+				C60E05C51B4ED3B200D27C26 /* FMDatabaseAdditions.m */,
+			);
+			name = FMDB;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -210,8 +266,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C60E05CA1B4ED3B200D27C26 /* FMDatabaseQueue.m in Sources */,
+				C60E05CB1B4ED3B200D27C26 /* FMDatabasePool.m in Sources */,
 				C60E059E1B4ED1D800D27C26 /* main.m in Sources */,
+				C60E05BC1B4ED36C00D27C26 /* sqlite3.c in Sources */,
+				C60E05C91B4ED3B200D27C26 /* FMResultSet.m in Sources */,
+				C60E05CC1B4ED3B200D27C26 /* FMDatabaseAdditions.m in Sources */,
 				C60E059C1B4ED1D800D27C26 /* AppDelegate.m in Sources */,
+				C60E05CD1B4ED3B200D27C26 /* FMDatabase.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -237,7 +299,7 @@
 		C60E05A11B4ED1D800D27C26 /* MainMenu.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				C60E05A21B4ED1D800D27C26 /* Base */,
+				C68191081B4ED4D3007AC894 /* en */,
 			);
 			name = MainMenu.xib;
 			sourceTree = "<group>";
@@ -331,6 +393,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = ChromeCookieCleaner/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -342,6 +405,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = ChromeCookieCleaner/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -401,6 +465,7 @@
 				C60E05B41B4ED1D800D27C26 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C60E05B51B4ED1D800D27C26 /* Build configuration list for PBXNativeTarget "ChromeCookieCleanerTests" */ = {
 			isa = XCConfigurationList;
@@ -409,6 +474,7 @@
 				C60E05B71B4ED1D800D27C26 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
