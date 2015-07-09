@@ -682,6 +682,9 @@
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
+                        <connections>
+                            <action selector="deleteCookies:" target="Voe-Tx-rLC" id="3Te-ZJ-OzD"/>
+                        </connections>
                     </button>
                     <popUpButton verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FsF-4G-vRk">
                         <rect key="frame" x="18" y="17" width="156" height="26"/>
